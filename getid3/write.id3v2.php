@@ -1230,8 +1230,8 @@ class getid3_write_id3v2
 						$this->errors[] = '[language] not specified for '.$frame_name;
 					} elseif (!isset($source_data_array['description'])) {
 						$this->errors[] = '[description] not specified for '.$frame_name;
-					} elseif (in_array($frame_name.$source_data_array['language'].$source_data_array['description'], $PreviousFrames)) {
-						$this->errors[] = 'Only one '.$frame_name.' tag allowed with the same Language + Description ('.$source_data_array['language'].' + '.$source_data_array['description'].')';
+					// } elseif (in_array($frame_name.$source_data_array['language'].$source_data_array['description'], $PreviousFrames)) {
+					//	$this->errors[] = 'Only one '.$frame_name.' tag allowed with the same Language + Description ('.$source_data_array['language'].' + '.$source_data_array['description'].')';
 					} else {
 						$PreviousFrames[] = $frame_name.$source_data_array['language'].$source_data_array['description'];
 					}
@@ -1354,8 +1354,8 @@ class getid3_write_id3v2
 						$this->errors[] = '[language] not specified for '.$frame_name;
 					} elseif (!isset($source_data_array['description'])) {
 						$this->errors[] = '[description] not specified for '.$frame_name;
-					} elseif (in_array($frame_name.$source_data_array['language'].$source_data_array['description'], $PreviousFrames)) {
-						$this->errors[] = 'Only one '.$frame_name.' tag allowed with the same Language + Description ('.$source_data_array['language'].' + '.$source_data_array['description'].')';
+					// } elseif (in_array($frame_name.$source_data_array['language'].$source_data_array['description'], $PreviousFrames)) {
+					//	$this->errors[] = 'Only one '.$frame_name.' tag allowed with the same Language + Description ('.$source_data_array['language'].' + '.$source_data_array['description'].')';
 					} else {
 						$PreviousFrames[] = $frame_name.$source_data_array['language'].$source_data_array['description'];
 					}
